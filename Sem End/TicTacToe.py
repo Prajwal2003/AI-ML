@@ -1,11 +1,11 @@
 def print_board(board):
-    for row in board:
-        print(" | ".join(row))
-    print("-" * 9)
+  for x,row in enumerate(board):
+      print(" | ".join(row))
+      if x != 2:
+        print("-" * 9)
 
 
 def check_winner(board):
-    # Check rows, columns, and diagonals
     for i in range(3):
         if board[i][0] == board[i][1] == board[i][2] != " ":
             return board[i][0]
