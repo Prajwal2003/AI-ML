@@ -2,7 +2,6 @@ from queue import PriorityQueue
 
 
 def h(state, goal):
-    # Heuristic function: Manhattan distance
     distance = 0
     for i in range(3):
         for j in range(3):
